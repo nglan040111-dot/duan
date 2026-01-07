@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chatbot Tư Vấn Điện Thoại</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <!-- Chat container -->
+  <div class="w-full max-w-md bg-white rounded-lg shadow-lg flex flex-col">
+
+    <!-- Header -->
+    <div class="bg-blue-600 text-white text-center py-3 rounded-t-lg">
+      🤖 Chatbot Tư Vấn Điện Thoại
+    </div>
+
+    <!-- Chat box -->
+    <div id="chatBox" class="flex-1 p-4 overflow-y-auto space-y-2">
+      <!-- Tin nhắn sẽ được render ở đây -->
+    </div>
+
+    <!-- Input -->
+    <div class="flex border-t p-3">
+      <input
+        id="messageInput"
+        type="text"
+        placeholder="Nhập nhu cầu của bạn..."
+        class="flex-1 border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+      <button
+        onclick="sendMessage()"
+        class="ml-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+      >
+        Gửi
+      </button>
+    </div>
+
+  </div>
+
+  <script src="js/chat.js"></script>
+</body>
+</html>
